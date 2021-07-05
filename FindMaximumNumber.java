@@ -77,6 +77,11 @@ public class FindMaximumNumber<Z extends Comparable<Z>>
 		E max=Collections.max(Arrays.asList(x));
 		return max;
 	}
+	public static <E> void printMaximum(E max)
+	{
+		System.out.println("The maximum Elemet is: "+max);
+		
+	}
 	public Z testMaximum()
 	{
 		
@@ -92,6 +97,7 @@ public class FindMaximumNumber<Z extends Comparable<Z>>
 	    System.out.println("Maximum number in double array is "+checkDoubleMaximum(arr1));
 	    String arr2[]= {"Apple","Peach","Banana"};
 	    System.out.println("Maximum in String array is "+checkStringMaximum(arr2));
+	    checkMaximum(arr);
 	}
 
 }
